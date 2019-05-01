@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AF6DB7A32278D87B00E43A1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DB7A22278D87B00E43A1A /* AppDelegate.swift */; };
-		AF6DB7A52278D87B00E43A1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DB7A42278D87B00E43A1A /* ViewController.swift */; };
 		AF6DB7A82278D87B00E43A1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6DB7A62278D87B00E43A1A /* Main.storyboard */; };
 		AF6DB7AA2278D88000E43A1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6DB7A92278D88000E43A1A /* Assets.xcassets */; };
 		AF6DB7AD2278D88000E43A1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6DB7AB2278D88000E43A1A /* LaunchScreen.storyboard */; };
 		AF6DB7B82278D88100E43A1A /* ARKit_PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DB7B72278D88100E43A1A /* ARKit_PlaygroundTests.swift */; };
+		AF6DB7C42278D98400E43A1A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DB7C32278D98400E43A1A /* UIView.swift */; };
+		AF6DB7C72278DBB200E43A1A /* ARController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DB7C62278DBB200E43A1A /* ARController.swift */; };
+		AF6DB7C92278DBBD00E43A1A /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DB7C82278DBBD00E43A1A /* LandingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* Begin PBXFileReference section */
 		AF6DB79F2278D87B00E43A1A /* ARKit Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6DB7A22278D87B00E43A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF6DB7A42278D87B00E43A1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF6DB7A72278D87B00E43A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF6DB7A92278D88000E43A1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6DB7AC2278D88000E43A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,9 @@
 		AF6DB7B32278D88100E43A1A /* ARKit PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit PlaygroundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6DB7B72278D88100E43A1A /* ARKit_PlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_PlaygroundTests.swift; sourceTree = "<group>"; };
 		AF6DB7B92278D88100E43A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6DB7C32278D98400E43A1A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AF6DB7C62278DBB200E43A1A /* ARController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARController.swift; sourceTree = "<group>"; };
+		AF6DB7C82278DBBD00E43A1A /* LandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				AF6DB7A22278D87B00E43A1A /* AppDelegate.swift */,
-				AF6DB7A42278D87B00E43A1A /* ViewController.swift */,
+				AF6DB7C52278DBA200E43A1A /* Controllers */,
+				AF6DB7C22278D96900E43A1A /* Extensions */,
 				AF6DB7A62278D87B00E43A1A /* Main.storyboard */,
 				AF6DB7A92278D88000E43A1A /* Assets.xcassets */,
 				AF6DB7AB2278D88000E43A1A /* LaunchScreen.storyboard */,
@@ -94,6 +99,23 @@
 				AF6DB7B92278D88100E43A1A /* Info.plist */,
 			);
 			path = "ARKit PlaygroundTests";
+			sourceTree = "<group>";
+		};
+		AF6DB7C22278D96900E43A1A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF6DB7C32278D98400E43A1A /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF6DB7C52278DBA200E43A1A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF6DB7C62278DBB200E43A1A /* ARController.swift */,
+				AF6DB7C82278DBBD00E43A1A /* LandingController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6DB7A52278D87B00E43A1A /* ViewController.swift in Sources */,
+				AF6DB7C72278DBB200E43A1A /* ARController.swift in Sources */,
+				AF6DB7C42278D98400E43A1A /* UIView.swift in Sources */,
+				AF6DB7C92278DBBD00E43A1A /* LandingController.swift in Sources */,
 				AF6DB7A32278D87B00E43A1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
